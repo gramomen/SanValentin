@@ -10122,8 +10122,8 @@ a.text-dark:hover, a.text-dark:focus {
 	function Cupon02() {
 		if (confirm("Estás segura de usar la cuponera?") == true) {
 			var name = prompt("Ingrese el código:");
-			if (name == null || name == "" || name != "272230") {
-				alert("Clave incorrecta")
+			if (name == null || name == "" || name != "22101994") {
+				alert("Clave incorrecta, es un código con una fecha de nacimiento DDMMYYYY")
 			}
 			else
 			{
@@ -10135,8 +10135,8 @@ a.text-dark:hover, a.text-dark:focus {
 	function Cupon03() {
 		if (confirm("Estás segura de usar la cuponera?") == true) {
 			var name = prompt("Ingrese el código:");
-			if (name == null || name == "" || name != "272230") {
-				alert("Clave incorrecta")
+			if (name == null || name == "" || name != "27091992") {
+				alert("Clave incorrecta, es un código con una fecha de nacimiento DDMMYYYY")
 			}
 			else
 			{
@@ -10148,8 +10148,8 @@ a.text-dark:hover, a.text-dark:focus {
 	function Cupon04() {
 		if (confirm("Estás segura de usar la cuponera?") == true) {
 			var name = prompt("Ingrese el código:");
-			if (name == null || name == "" || name != "272230") {
-				alert("Clave incorrecta")
+			if (name == null || name == "" || name != "amor") {
+				alert("Clave incorrecta, es una palabra")
 			}
 			else
 			{
@@ -10161,8 +10161,8 @@ a.text-dark:hover, a.text-dark:focus {
 	function Cupon05() {
 		if (confirm("Estás segura de usar la cuponera?") == true) {
 			var name = prompt("Ingrese el código:");
-			if (name == null || name == "" || name != "272230") {
-				alert("Clave incorrecta")
+			if (name == null || name == "" || name != "28012023") {
+				alert("Clave incorrecta, es un código con una fecha de nacimiento DDMMYYYY")
 			}
 			else
 			{
@@ -10187,7 +10187,7 @@ a.text-dark:hover, a.text-dark:focus {
 	function Cupon07() {
 		if (confirm("Estás segura de usar la cuponera?") == true) {
 			var name = prompt("Ingrese el código:");
-			if (name == null || name == "" || name != "272230") {
+			if (name == null || name == "" || name != "280123") {
 				alert("Clave incorrecta")
 			}
 			else
@@ -10198,9 +10198,15 @@ a.text-dark:hover, a.text-dark:focus {
 		} 		
 	}
 	function Cupon08() {
+		var inputDate = new Date("14/02/2024");
+		var todaysDate = new Date();
+		if(inputDate.setHours(0,0,0,0) != todaysDate.setHours(0,0,0,0)) {
+			alert("Cupón valido solo para el 14 de Febrero")
+			return;
+		}
 		if (confirm("Estás segura de usar la cuponera?") == true) {
 			var name = prompt("Ingrese el código:");
-			if (name == null || name == "" || name != "272230") {
+			if (name == null || name == "" || name != "140224") {
 				alert("Clave incorrecta")
 			}
 			else
