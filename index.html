@@ -10055,27 +10055,27 @@ a.text-dark:hover, a.text-dark:focus {
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" onclick="Cupon06()">
+                <a class="text-decoration-none">
                     <div class="cat-item img-zoom d-flex align-items-center mb-4">
                         <div class="overflow-hidden" style="width: 100px; height: 100px;">
                             <img class="img-fluid" src="https://st4.depositphotos.com/1742172/24831/v/450/depositphotos_248316964-stock-illustration-hand-drawn-quirky-cartoon-pink.jpg" alt="">
                         </div>
                         <div class="flex-fill pl-3">
                             <h6>Cupón 6</h6>
-                            <small class="text-body" id="txtcupon06">Cupón válido hasta el 29/02</small>
+                            <small class="text-body" id="txtcupon06">Cupón utilizado.</small>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" onclick="Cupon07()">
+                <a class="text-decoration-none">
                     <div class="cat-item img-zoom d-flex align-items-center mb-4">
                         <div class="overflow-hidden" style="width: 100px; height: 100px;">
                             <img class="img-fluid" src="https://st4.depositphotos.com/1742172/24831/v/450/depositphotos_248316964-stock-illustration-hand-drawn-quirky-cartoon-pink.jpg" alt="">
                         </div>
                         <div class="flex-fill pl-3">
                             <h6>Cupón 7</h6>
-                            <small class="text-body" id="txtcupon07">Cupón válido hasta el 29/02</small>
+                            <small class="text-body" id="txtcupon07">Cupón utilizado.</small>
                         </div>
                     </div>
                 </a>
@@ -10198,21 +10198,15 @@ a.text-dark:hover, a.text-dark:focus {
 		} 		
 	}
 	function Cupon08() {
-		var inputDate = new Date("14/02/2024");
-		var todaysDate = new Date();
-		if(inputDate.setHours(0,0,0,0) != todaysDate.setHours(0,0,0,0)) {
-			alert("Cupón valido solo para el 14 de Febrero")
-			return;
-		}
 		if (confirm("Estás segura de usar la cuponera?") == true) {
 			var name = prompt("Ingrese el código:");
 			if (name == null || name == "" || name != "140224") {
-				alert("Clave incorrecta")
+				alert("Clave incorrecta, es una fecha DDMMYY")
 			}
 			else
 			{
 				document.getElementById("txtcupon08").innerHTML = "Cupón válido para una cenita juntos, para el 14 de Febrero 2024.";
-				window.location.href = "https://api.whatsapp.com/send?phone=51993772038&text=Hola, quiero usar el cupón válido para una cenita juntos, para el 14 de Febrero 2024!"
+				window.location.href = "https://api.whatsapp.com/send?phone=51993772038&text=Hola, quiero usar el cupón válido para una cenita juntos. Alistate que hoy cenamos juntos con nuestro príncipe. Feliz día San Valentín!"
 			}
 		} 		
 	}
